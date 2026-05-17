@@ -1,0 +1,60 @@
+site_name: Agentic AI Delivery Playbook
+site_description: Leadership playbook for agentic AI adoption — operating model, 30/60/90, KPIs, platform decisions.
+site_author: Isaac Maya
+site_url: https://isaac-maya.github.io/agentic-ai-delivery-playbook/
+repo_url: https://github.com/isaac-maya/agentic-ai-delivery-playbook
+repo_name: isaac-maya/agentic-ai-delivery-playbook
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+
+nav:
+  - Home: index.md
+  - The Playbook: playbook.md
+  - Operating Model: operating_model.md
+  - 30/60/90 Rollout: 30_60_90.md
+  - KPI Framework: kpis.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+plugins:
+  - search
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/isaac-maya
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/isaac-maya
